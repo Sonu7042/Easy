@@ -61,7 +61,7 @@ export function PartnerCTA() {
           {/* Right image */}
           <div className="relative min-h-64">
             <img
-              src="/partner-expert.png"
+              src="../customImgs/Partner-Growth.png"
               alt="Eazzy service expert holding a tool"
               className="h-full w-full object-cover"
             />
