@@ -13,10 +13,13 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-neutral-200 bg-background">
       <div className="mx-auto flex h-16 max-w-7xl items-center gap-4 px-4 sm:px-6 lg:px-10">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-1 text-2xl font-extrabold text-brand">
-          Eazzy
-          <span className="-mt-2 text-brand">»</span>
-        </a>
+<a href="#" className="flex items-center shrink-0">
+  <img
+    src="/customImgs/EazzyLogo.png"
+    alt="Eazzy Logo"
+    className="h-12 w-auto object-contain"
+  />
+</a>
 
         {/* Nav links */}
         <nav className="ml-6 hidden items-center gap-7 md:flex">

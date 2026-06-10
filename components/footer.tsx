@@ -22,7 +22,11 @@ export function Footer() {
         <div className="grid gap-10 lg:grid-cols-5">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <span className="text-2xl font-extrabold text-brand">Eazzy»</span>
+  <img
+    src="/customImgs/EazzyLogo.png"
+    alt="Eazzy Logo"
+    className="h-12 w-auto object-contain"
+  />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-neutral-500">
               Redefining home maintenance with professional, technology-led expert services
               at your doorstep.
