@@ -29,7 +29,7 @@ function StepText({
 
 export function HowItWorks() {
   return (
-    <section className="mx-auto max-w-7xl px-4 pt-28 sm:px-6 lg:px-10">
+    <section className="mx-auto max-w-7xl px-4 pt-28 sm:px-6 lg:px-10 overflow-hidden">
       {/* Heading */}
       <div className="text-center" data-aos="fade-up">
         <h2 className="text-2xl font-semibold text-foreground sm:text-3xl">
@@ -41,7 +41,7 @@ export function HowItWorks() {
         </p>
       </div>
 
-      <div className="mt-16 space-y-24">
+      <div className="mt-16 space-y-24 overflow-hidden">
         {/* Step 1 */}
         <div className="grid items-center gap-10 md:grid-cols-2">
           <StepText

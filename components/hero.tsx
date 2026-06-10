@@ -44,7 +44,7 @@ const smallCategories = [
 
 export function Hero() {
   return (
-    <section className="mx-auto max-w-7xl px-4 pt-10 sm:px-6 lg:px-10">
+    <section className="mx-auto max-w-7xl px-4 pt-10 sm:px-6 lg:px-10 overflow-hidden">
       {/* Hero Top */}
       <div className="grid items-center gap-8 lg:grid-cols-2">
         <div
