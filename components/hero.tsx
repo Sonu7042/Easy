@@ -4,20 +4,20 @@ const bigCategories = [
   {
     title: 'Ac & Appliance',
     desc: 'Repair, installation & maintenance for all major appliances.',
-    img: '/cat-ac.png',
+    img: '../customImgs/Ac.png',
     imgAlt: 'White air conditioner mounted on a red wall',
     overlay: true,
   },
   {
     title: 'Home Repair & Renovation',
     desc: 'Professional solutions for repairs, upgrades & home improvement.',
-    img: '/cat-repair.png',
+    img: '../customImgs/HomeRepair.png',
     imgAlt: 'Hammer and repair tools',
   },
   {
     title: 'Cleaning & Pest Control',
     desc: 'Deep cleaning and pest protection for a healthier home.',
-    img: '/cat-pest.png',
+    img: '../customImgs/cleaningAndPest.png',
     imgAlt: 'Pest control worker in protective suit',
   },
 ]
@@ -26,19 +26,19 @@ const smallCategories = [
   {
     title: 'Gadget Repair',
     desc: 'Quick and reliable repairs for your essential devices.',
-    img: '/cat-gadget.png',
+    img: '../customImgs/budgetRepair.png',
     imgAlt: 'Tablet being repaired',
   },
   {
     title: 'Home Security',
     desc: 'Smart protection solutions for complete peace of mind.',
-    img: '/cat-security.png',
+    img: '../customImgs/HomeSecurity.png',
     imgAlt: 'Smart home security remote',
   },
   {
     title: 'Home Help & Lifestyle',
     desc: 'Everyday assistance services designed around your lifestyle.',
-    img: null,
+    img: '../customImgs/HomeHelp.png',
     imgAlt: '',
   },
 ]
@@ -62,7 +62,7 @@ export function Hero() {
 
         <div className="flex justify-center lg:justify-end" data-aos="fade-left">
           <img
-            src="/hero-house.png"
+            src="../customImgs/heroImg.png"
             alt="Illustration of a home with repair tools"
             className="w-full max-w-md"
           />
