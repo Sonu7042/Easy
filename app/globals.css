@@ -149,7 +149,7 @@ html.lenis body {
 .lenis.lenis-stopped {
   overflow: hidden;
 }
-
+   
 .lenis.lenis-scrolling iframe {
   pointer-events: none;
 }
