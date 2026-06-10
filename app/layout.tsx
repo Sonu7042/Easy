@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 import './globals.css'
 import { AosInit } from '@/components/aos-init'
-import SmoothScroll  from "@/components/SmoothScroll" 
+// import SmoothScroll  from "@/components/SmoothScroll" 
 
 const poppins = Poppins({
   variable: '--font-poppins',
@@ -27,7 +27,7 @@ export default function RootLayout({
     <html lang="en" className={`${poppins.variable} bg-background`}>
       <body className="font-sans antialiased">
         <AosInit />
-         <SmoothScroll />
+         {/* <SmoothScroll /> */}
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
