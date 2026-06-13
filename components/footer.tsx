@@ -1,35 +1,35 @@
-import { Camera, Globe, Share2, Smartphone } from 'lucide-react'
+import { Camera, Globe, Share2, Smartphone } from "lucide-react";
 
 const columns = [
   {
-    heading: 'Company',
-    links: ['About Us', 'Careers', 'Partner Program', 'Cities We Serve'],
+    heading: "Company",
+    links: ["About Us", "Careers", "Partner Program", "Cities We Serve"],
   },
   {
-    heading: 'Services',
-    links: ['AC Repair', 'House Cleaning', 'Plumbing', 'Pest Control'],
+    heading: "Services",
+    links: ["AC Repair", "House Cleaning", "Plumbing", "Pest Control"],
   },
   {
-    heading: 'Legal',
-    links: ['Terms of Service', 'Privacy Policy', 'Return Policy'],
+    heading: "Legal",
+    links: ["Terms of Service", "Privacy Policy", "Return Policy"],
   },
-]
+];
 
 export function Footer() {
   return (
-    <footer className="mt-28 bg-neutral-100">
+    <footer className="mt-28 bg-[#E2E2E2]">
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-10">
-        <div className="grid gap-10 lg:grid-cols-5">
+        <div className="grid gap-10  lg:grid-cols-5">
           {/* Brand */}
           <div className="lg:col-span-1">
-  <img
-    src="/customImgs/EazzyLogo.png"
-    alt="Eazzy Logo"
-    className="h-12 w-auto object-contain"
-  />
+            <img
+              src="/customImgs/EazzyLogo.png"
+              alt="Eazzy Logo"
+              className="h-12 w-auto object-contain"
+            />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-neutral-500">
-              Redefining home maintenance with professional, technology-led expert services
-              at your doorstep.
+              Redefining home maintenance with professional, technology-led
+              expert services at your doorstep.
             </p>
             <div className="mt-5 flex gap-3">
               {[Globe, Camera, Share2].map((Icon, i) => (
@@ -78,8 +78,12 @@ export function Footer() {
               >
                 <Smartphone className="size-6 text-foreground" />
                 <span className="leading-tight">
-                  <span className="block text-[10px] text-neutral-400">Download on</span>
-                  <span className="block text-sm font-semibold text-foreground">App Store</span>
+                  <span className="block text-[10px] text-neutral-400">
+                    Download on
+                  </span>
+                  <span className="block text-sm font-semibold text-foreground">
+                    App Store
+                  </span>
                 </span>
               </a>
               <a
@@ -88,8 +92,12 @@ export function Footer() {
               >
                 <Smartphone className="size-6 text-foreground" />
                 <span className="leading-tight">
-                  <span className="block text-[10px] text-neutral-400">Get it on</span>
-                  <span className="block text-sm font-semibold text-foreground">Google Play</span>
+                  <span className="block text-[10px] text-neutral-400">
+                    Get it on
+                  </span>
+                  <span className="block text-sm font-semibold text-foreground">
+                    Google Play
+                  </span>
                 </span>
               </a>
             </div>
@@ -103,5 +111,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

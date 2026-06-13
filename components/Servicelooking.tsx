@@ -4,19 +4,19 @@ const bigCategories = [
   {
     title: 'Ac & Appliance',
     desc: 'Repair, installation & maintenance for all major appliances.',
-    img: '../customImgs/Ac.png',
+    img: '/customImgs/Ac.png',
     imgAlt: 'White air conditioner mounted on a red wall',
   },
   {
     title: 'Home Repair & Renovation',
     desc: 'Professional solutions for repairs, upgrades & home improvement.',
-    img: '../customImgs/HomeRepair.png',
+    img: '/customImgs/HomeRepair.png',
     imgAlt: 'Hammer and repair tools',
   },
   {
     title: 'Cleaning & Pest Control',
     desc: 'Deep cleaning and pest protection for a healthier home.',
-    img: '../customImgs/cleaningAndPest.png',
+    img: '/customImgs/cleaningAndPest.png',
     imgAlt: 'Pest control worker in protective suit',
   },
 ]
@@ -25,58 +25,27 @@ const smallCategories = [
   {
     title: 'Gadget Repair',
     desc: 'Quick and reliable repairs for your essential devices.',
-    img: '../customImgs/budgetRepair.png',
+    img: '/customImgs/budgetRepair.png',
     imgAlt: 'Tablet being repaired',
   },
   {
     title: 'Home Security',
     desc: 'Smart protection solutions for complete peace of mind.',
-    img: '../customImgs/HomeSecurity.png',
+    img: '/customImgs/HomeSecurity.png',
     imgAlt: 'Smart home security remote',
   },
   {
     title: 'Home Help & Lifestyle',
     desc: 'Everyday assistance services designed around your lifestyle.',
-    img: '../customImgs/HomeHelp.png',
+    img: '/customImgs/HomeHelp.png',
     imgAlt: '',
   },
 ]
 
-export function Hero() {
+export function Servicelooking() {
   return (
-    <section className="mx-auto max-w-7xl px-4 pt-10 sm:px-6 lg:px-10 overflow-hidden">
-      {/* Hero Top */}
-      <div className="grid items-center gap-8 lg:grid-cols-2">
-        <div
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-easing="ease-out-cubic"
-        >
-          <h1 className="text-balance text-3xl font-bold leading-tight text-foreground sm:text-4xl lg:text-[2.6rem]">
-            Your Home.
-            <br />
-            Expertly Taken Care Of.
-          </h1>
+    <section id="services-section" className="mx-auto max-w-7xl px-4 pt-10 sm:px-6 lg:px-10 overflow-hidden">
 
-          <p className="mt-4 max-w-md text-pretty text-sm leading-relaxed text-neutral-500">
-            Everything your home needs from repairs and maintenance to everyday
-            care, delivered by verified professionals you can trust.
-          </p>
-        </div>
-
-        <div
-          className="flex justify-center lg:justify-end"
-          data-aos="fade-left"
-          data-aos-duration="1200"
-          data-aos-easing="ease-out-cubic"
-        >
-          <img
-            src="../customImgs/heroImg.png"
-            alt="Illustration of a home with repair tools"
-            className="mr-25 w-full max-w-70 transition-transform duration-700 hover:scale-[1.03]"
-          />
-        </div>
-      </div>
 
       {/* Heading */}
       <div className="mt-8" data-aos="fade-up">
@@ -84,6 +53,7 @@ export function Hero() {
           What are you looking for?
         </p>
       </div>
+
 
       {/* Big Categories */}
       <div className="mt-6 grid gap-4 md:grid-cols-12">

@@ -1,25 +1,25 @@
-'use client'
+"use client";
 
-import { ChevronDown, MapPin, Search, ShoppingCart, User } from 'lucide-react'
+import { ChevronDown, MapPin, Search, ShoppingCart, User } from "lucide-react";
 
 const navLinks = [
-  { label: 'Home', active: true },
-  { label: 'My Product', active: false },
-  { label: 'Orders', active: false },
-]
+  { label: "Home", active: true },
+  { label: "My Product", active: false },
+  { label: "Orders", active: false },
+];
 
 export function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-neutral-200 bg-background">
       <div className="mx-auto flex h-16 max-w-7xl items-center gap-4 px-4 sm:px-6 lg:px-10">
         {/* Logo */}
-<a href="#" className="flex items-center shrink-0">
-  <img
-    src="/customImgs/EazzyLogo.png"
-    alt="Eazzy Logo"
-    className="h-12 w-auto object-contain"
-  />
-</a>
+        <a href="#" className="flex items-center shrink-0">
+          <img
+            src="/customImgs/EazzyLogo.png"
+            alt="Eazzy Logo"
+            className="h-12 w-auto object-contain"
+          />
+        </a>
 
         {/* Nav links */}
         <nav className="ml-6 hidden items-center gap-7 md:flex">
@@ -29,8 +29,8 @@ export function Navbar() {
               href="#"
               className={`relative text-sm font-medium transition-colors hover:text-foreground ${
                 link.active
-                  ? 'text-foreground after:absolute after:-bottom-[22px] after:left-0 after:h-0.5 after:w-full after:bg-foreground'
-                  : 'text-neutral-500'
+                  ? "text-foreground after:absolute after:-bottom-[22px] after:left-0 after:h-0.5 after:w-full after:bg-foreground"
+                  : "text-neutral-500"
               }`}
             >
               {link.label}
@@ -42,7 +42,9 @@ export function Navbar() {
         <button className="ml-4 hidden items-center gap-2 lg:flex">
           <MapPin className="size-5 text-brand" />
           <span className="text-left leading-tight">
-            <span className="block text-[10px] text-neutral-400">Delivering to</span>
+            <span className="block text-[10px] text-neutral-400">
+              Delivering to
+            </span>
             <span className="block text-xs font-medium text-foreground">
               Add location, Gurugram to
             </span>
@@ -75,5 +77,5 @@ export function Navbar() {
         </button>
       </div>
     </header>
-  )
+  );
 }
